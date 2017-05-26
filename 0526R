@@ -1,0 +1,10 @@
+data<-read.table("c:/webDev/data.txt");
+data
+barplot(data$V2, names.arg=data$Vq, col=rainbow(10));
+pie(data$V2, labels.arg=data$V1, col=rainbow(10));
+barplot(data$V2, names.arg=data$V1, col=rainbow(10));
+pie(data$V2, labels=data$V1, col=rainbow(10));
+par(mfrow=c(1,2))
+pie(data$V2, labels=data$V1, col=rainbow(10))
+barplot(data$V2, names.arg=data$V1, col=rainbow(10));
+q()
